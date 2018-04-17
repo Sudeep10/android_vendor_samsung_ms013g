@@ -188,6 +188,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/libcneconn.so:system/vendor/lib/libcneconn.so \
+    $(LOCAL_PATH)/proprietary/vendor/lib/libcne.so:system/vendor/lib/libcne.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/libcneqmiutils.so:system/vendor/lib/libcneqmiutils.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/libNimsWrap.so:system/vendor/lib/libNimsWrap.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so
@@ -198,7 +199,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/bin/fmconfig:system/bin/fmconfig \
     $(LOCAL_PATH)/proprietary/bin/fm_qsoc_patches:system/bin/fm_qsoc_patches \
     $(LOCAL_PATH)/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
+    $(LOCAL_PATH)/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
     $(LOCAL_PATH)/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
+    $(LOCAL_PATH)/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
+    $(LOCAL_PATH)/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
+    $(LOCAL_PATH)/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
@@ -314,7 +319,14 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/bin/time_daemon:system/bin/time_daemon \
     $(LOCAL_PATH)/proprietary/vendor/lib/libtime_genoff.so:system/vendor/lib/libtime_genoff.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so
-#    $(LOCAL_PATH)/proprietary/app/TimeService/TimeService.apk:system/app/TimeService/TimeService.apk \
+
+# *_*
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/vendor/lib/libbccQTI.so:system/vendor/lib/libbccQTI.so \
+    $(LOCAL_PATH)/proprietary/vendor/lib/libmasc.so:system/vendor/lib/libmasc.so \
+    $(LOCAL_PATH)/proprietary/vendor/lib/libscale.so:system/vendor/lib/libscale.so \
+    $(LOCAL_PATH)/proprietary/vendor/lib/libvendorconn.so:system/vendor/lib/libvendorconn.so \
+    $(LOCAL_PATH)/proprietary/vendor/lib/libwqe.so:system/vendor/lib/libwqe.so
 
 # Camera
 PRODUCT_COPY_FILES += \
