@@ -280,27 +280,29 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/vendor/lib/libqmi_common_so.so:system/vendor/lib/libqmi_common_so.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
-    $(LOCAL_PATH)/proprietary/vendor/lib/libdsnetutils.so:system/vendor/lib/libdsnetutils.so
+    $(LOCAL_PATH)/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
+    $(LOCAL_PATH)/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
+    $(LOCAL_PATH)/proprietary/vendor/lib/libdsnetutils.so:system/vendor/lib/libdsnetutils.so \
 
 # Radio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/bin/rfs_access:system/bin/rfs_access \
     $(LOCAL_PATH)/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     $(LOCAL_PATH)/proprietary/bin/qmuxd:system/bin/qmuxd \
+    $(LOCAL_PATH)/proprietary/bin/efsks:system/bin/efsks \
+    $(LOCAL_PATH)/proprietary/bin/ks:system/bin/ks \
+    $(LOCQL_PATH)/proprietary/bin/qcks:system/bin/qcks \
     $(LOCAL_PATH)/proprietary/bin/radish:system/bin/radish \
     $(LOCAL_PATH)/proprietary/lib/libatparser.so:system/lib/libatparser.so \
     $(LOCAL_PATH)/proprietary/lib/libcordon.so:system/lib/libcordon.so \
     $(LOCAL_PATH)/proprietary/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
     $(LOCAL_PATH)/proprietary/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
-    $(LOCAL_PATH)/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/libsec-ril.so:system/vendor/lib/libsec-ril.so \
     $(LOCAL_PATH)/proprietary/lib/libsec-ril-dsds.so:system/lib/libsec-ril-dsds.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/vendor/lib/libstlport.so:system/vendor/lib/libstlport.so \
-    $(LOCAL_PATH)/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
-    $(LOCAL_PATH)/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
     $(LOCAL_PATH)/proprietary/lib/librilutils.so:system/lib/librilutils.so
 
 # Sensors

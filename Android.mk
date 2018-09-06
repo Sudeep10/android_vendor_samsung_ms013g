@@ -19,23 +19,26 @@ LOCAL_PATH := $(call my-dir)
 ifneq ($(filter ms013g,$(TARGET_DEVICE)),)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := com.qualcomm.location
+LOCAL_MODULE := libtime_genoff
 LOCAL_MODULE_OWNER := samsung
-LOCAL_SRC_FILES := proprietary/app/$(LOCAL_MODULE)/$(LOCAL_MODULE).apk
+LOCAL_SRC_FILES := proprietary/vendor/lib/libtime_genoff.so
+LOCAL_MULTILIB := 32
 LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-LOCAL_MODULE_CLASS := APPS
-LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_VENDOR_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := TimeService
 LOCAL_MODULE_OWNER := samsung
-LOCAL_SRC_FILES := proprietary/app/$(LOCAL_MODULE)/$(LOCAL_MODULE).apk
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-LOCAL_MODULE_CLASS := APPS
+LOCAL_SRC_FILES := proprietary/app/TimeService/TimeService.apk
 LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
+
 
 endif
