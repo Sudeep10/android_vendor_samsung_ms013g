@@ -254,7 +254,7 @@ PRODUCT_COPY_FILES += \
 # Perf
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/bin/mpdecision:system/bin/mpdecision \
-    $(LOCAL_PATH)/proprietary/vendor/lib/libqc-opt.so:system/vendor/lib/libqc-opt.so
+    $(LOCAL_PATH)/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so
 
 # IPC router security
 PRODUCT_COPY_FILES += \
@@ -304,7 +304,6 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/lib/hw/sensors.vendor.msm8226.so:system/lib/hw/sensors.vendor.msm8226.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/libsensor1.so:system/vendor/lib/libsensor1.so
 
 # Thermal
