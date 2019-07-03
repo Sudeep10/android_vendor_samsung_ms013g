@@ -309,7 +309,8 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/vendor/lib/libsensor1.so:system/vendor/lib/libsensor1.so
+    $(LOCAL_PATH)/proprietary/vendor/lib/libsensor1.so:system/vendor/lib/libsensor.so \
+    $(LOCAL_PATH)/proprietary/vendor/lib/sensors.vendor.msm8226.so:system/vendor/lib/sensors.vendor.msm8226.so
 
 # Thermal
 PRODUCT_COPY_FILES += \
