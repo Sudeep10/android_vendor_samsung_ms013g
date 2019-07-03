@@ -255,6 +255,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/bin/mpdecision:system/bin/mpdecision \
     $(LOCAL_PATH)/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so
+    $(LOCAL_PATH)/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so
 
 # IPC router security
 PRODUCT_COPY_FILES += \
